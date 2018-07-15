@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">40dp</dimen>
+    <dimen name="layout_margin_top">20dp</dimen>
+    <dimen name="layout_width">260dp</dimen>
+    <dimen name="layout_height">60dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="layout_margin">5dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_click">35sp</dimen>
+    <dimen name="imagem_button">120dp</dimen>
+    <dimen name="layout_usuario">180dp</dimen>
+    <dimen name="gravity">28dp</dimen>
+</resources>

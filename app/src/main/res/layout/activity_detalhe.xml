@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud"
+    tools:context=".activity.DetalheActivity">
+
+    <TextView
+        android:id="@+id/nomeDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/imagem_button"
+        android:textSize="@dimen/text_size_click"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:contentDescription="@string/content_nome_usuario"/>
+
+    <TextView
+        android:id="@+id/enderecoDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:contentDescription="@string/content_endereco_usuario" />
+
+    <TextView
+        android:id="@+id/bairroDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:contentDescription="@string/content_bairro_usuario"/>
+
+    <TextView
+        android:id="@+id/cidadeDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:contentDescription="@string/content_cidade_usuario"/>
+
+    <TextView
+        android:id="@+id/complementoDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:contentDescription="@string/content_complemento_usuario"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:elevation="@dimen/layout_margin">
+
+        <TextView
+            android:id="@+id/telefoneDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_click"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/gravity"
+            android:contentDescription="@string/content_telefone_usuario"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gravity"
+            android:src="@drawable/ic_call_black_24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

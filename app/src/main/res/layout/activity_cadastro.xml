@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CadastroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorbackground"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextNome"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_nome"
+            android:inputType="textCapSentences|textCapWords"
+            android:contentDescription="@string/content_nome"/>
+
+        <EditText
+            android:id="@+id/editTextSobrenome"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_sobrenome"
+            android:inputType="textCapSentences|textCapWords"
+            android:contentDescription="@string/content_sobrenome"/>
+
+        <EditText
+            android:id="@+id/editTextEmaill"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress|textWebEmailAddress"
+            android:contentDescription="@string/content_email_cadastro"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextDdd"
+                style="@style/edit_text_cadastro"
+                android:hint="@string/hint_ddd"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_weight="4"
+                android:contentDescription="@string/content_ddd"/>
+
+            <EditText
+                android:id="@+id/editTextTelefone"
+                style="@style/edit_text_cadastro"
+                android:hint="@string/hint_telefone"
+                android:inputType="number"
+                android:maxLength="9"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_telefone"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextSenhaa"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_senha"
+            android:inputType="textPassword"
+            android:contentDescription="@string/content_senha_cadastro"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmar"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_confirmar_senha"
+            android:inputType="textVisiblePassword"
+            android:contentDescription="@string/content_confirmar"/>
+
+        <EditText
+            android:id="@+id/editTextRua"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_rua"
+            android:inputType="textCapSentences|textCapWords"
+            android:contentDescription="@string/content_rua"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNumero"
+                style="@style/edit_text_cadastro"
+                android:hint="@string/hint_numero"
+                android:inputType="number"
+                android:layout_weight="2"
+                android:contentDescription="@string/content_numero"/>
+
+            <EditText
+                android:id="@+id/editTextComplemento"
+                style="@style/edit_text_cadastro"
+                android:hint="@string/hint_complemento"
+                android:inputType="textAutoComplete|textPersonName|number|text"
+                android:maxLength="10"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_complemento"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextBairro"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_bairro"
+            android:inputType="textCapSentences|textCapWords"
+            android:contentDescription="@string/content_bairro"/>
+
+        <EditText
+            android:id="@+id/editTextCidade"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_cidade"
+            android:inputType="textCapSentences|textCapWords"
+            android:contentDescription="@string/content_cidade"/>
+
+        <EditText
+            android:id="@+id/editTextEstado"
+            style="@style/edit_text_cadastro"
+            android:hint="@string/hint_estado"
+            android:inputType="textCapSentences|textCapWords"
+            android:contentDescription="@string/content_estado"/>
+
+        <Button
+            android:id="@+id/buttonCadastro"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/buttonstyle"
+            android:textSize="@dimen/text_size"
+            android:contentDescription="@string/text_button_cadastrar"/>
+
+        <TextView
+            android:id="@+id/linkLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="@dimen/margin"
+            android:gravity="center"
+            android:text="@string/yes_member"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorAccent"
+            android:contentDescription="@string/content_pagina_login"/>
+
+    </LinearLayout>
+
+</ScrollView>

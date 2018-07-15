@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AdapterDadosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageUsuarioAdapter"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@color/colorbackground"
+            android:src="@drawable/ic_account_box_black_24dp"
+            android:contentDescription="@string/content_foto_usuario"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cidadeEstadoAdapter"
+                style="@style/edit_text_adapter"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:contentDescription="@string/content_nome_adapter"/>
+
+            <TextView
+                android:id="@+id/bairroAdapter"
+                style="@style/edit_text_adapter"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:contentDescription="@string/content_bairro_adapter"/>
+
+            <TextView
+                android:id="@+id/ruaNumeroAdapter"
+                style="@style/edit_text_adapter"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_endereco_adapter"/>
+
+            <TextView
+                android:id="@+id/complementoAdapter"
+                style="@style/edit_text_adapter"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_weight="3"
+                android:contentDescription="@string/content_complemento_adapter"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
